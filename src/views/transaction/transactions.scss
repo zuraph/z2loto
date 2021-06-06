@@ -1,0 +1,149 @@
+.layout-wrapper {
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .flex-area {
+            flex: 1;
+        }
+    }
+}
+
+#transaction {
+    .p-datatable {
+        .p-datatable-thead {
+            tr {
+                th {
+                    padding: 0.2rem 1rem;
+                }
+            }
+        }
+        .p-datatable-tbody {
+            tr {
+                td {
+                    padding: 0.2rem 1rem;
+                }
+            }
+        }
+    }
+
+    .flex-box {
+        display: flex;
+        height: 100%;
+        &.call {
+            flex-direction: column;
+        }
+        &.row {
+            flex-direction: row;
+        }
+        .tr-grid {
+            .p-datatable-header {
+                padding: 2px 2px;
+            }
+            .p-datatable-thead {
+                th {
+                    padding: 2px 2px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+
+                }
+            }
+        }
+        .grid {
+            flex: 1;
+            overflow: hidden;
+            .p-datatable {
+                margin-top: 0px !important;
+                height: 100%;
+                //.p-datatable-wrapper {
+                //    height: calc(100% - 55px);
+                //}
+                .p-datatable-scrollable-wrapper {
+                    height: calc(100% - 55px);
+                    display: flex;
+                    .p-datatable-scrollable-view {
+                        display: flex;
+                        /* width: 100%; */
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        .p-datatable-scrollable-body {
+                            flex: 1;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+            }
+        }
+        .info {
+            min-height: 400px;
+            .p-tabview {
+                height: 100%;
+                .p-tabview-panels {
+                    height: calc(100% - 40px);
+                }
+            }
+        }
+
+        .bg {
+            background: var(--surface-e);
+            padding: 10px;
+            box-shadow: 0 2px 1px -1px #00000033, 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001f;
+            border-radius: 4px;
+            margin-bottom: 0.6rem;
+
+            &.filter {
+                padding: 6px 10px;
+            }
+            &.grid {
+                padding: 0;
+            }
+
+        }
+
+        .fl-row {
+            //width: 100%;
+            display: inline-flex;
+            align-items: center;
+            margin-right: 10px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+
+            .space {
+                padding: 5px;
+            }
+            .p-inputtext {
+                padding: 0.5rem 1rem;
+            }
+            .p-multiselect-label {
+                padding: 0.5rem 1rem;
+            }
+            .p-datepicker-trigger {
+                padding: 0.5rem;
+            }
+            .p-button-icon-only {
+                padding: 0.5rem;
+            }
+            .search-btn {
+                Button {
+                    padding: 0.5rem 1rem;
+                }
+            }
+            #amountFrom {
+                input {
+                    width: 147px;
+                }
+            }
+            #amountTo {
+                input {
+                    width: 147px;
+                }
+            }
+            .p-multiselect {
+                width: 213px;
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "name": "General",
+            "meta": [
+                "general"
+            ],
+            "children": [
+
+                {
+                    "name": "მომხმარებლების ბაზა",
+                    "to": "/users",
+                    "meta": [
+                        "show all users"
+                    ]
+                },
+                {
+                    "name": "ფინანსური ბაზა",
+                    "to": "/finances",
+                    "meta": [
+                        "show all users"
+                    ]
+                },
+                {
+                    "name": "მენეჯმენტ სისტემა",
+                    "to": "/menejment",
+                    "meta": [
+                        "show all users"
+                    ]
+                }
+
+            ]
+        }
+    ]
+}
